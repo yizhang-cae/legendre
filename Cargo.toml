@@ -1,5 +1,5 @@
 [package]
-name = "Legendre"
+name = "legendre"
 version = "0.1.0"
 authors = ["Yi Zhang <yizhang.cae@gmail.com>"]
 
