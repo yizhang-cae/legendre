@@ -6,23 +6,28 @@ mod legendre {
         };
     }
 
+    /// Legendre polynomial
     pub struct Legendre {
         order: u32,
     }
 
     impl Legendre {
+        /// Create `Legendre`
         pub fn new(n: u32) -> Legendre {
             Legendre { order: n }
         }
 
+        /// Get the order of the polynomial
         pub fn order(&self) -> u32 {
             self.order
         }
 
+        /// Generate polynomial
         pub fn p(&self) -> poly!(){
             legendre_polynomial(self.order())
         }
 
+        /// Generate derivative polynomial
         pub fn dp(&self) -> poly!(){
             legendre_polynomial_d(self.order())
         }
